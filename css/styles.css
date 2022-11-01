@@ -1,0 +1,273 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Light.woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Medium.woff2');
+  font-weight: 500;
+  font-style: bold;
+}
+@font-face {
+  font-family: 'Rubik';
+  src: url('../fonts/RubikBeastly-Regular.woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+/* global reset */
+html, body, span, label, h1, h2, h3, h4, h5, h6, p, a, em, img, s, strong, b, u, i, dl, dt, dd, ol, ul, li, article, aside, footer, nav, section, input {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	background: none;
+	list-style: none; 
+}
+html {
+	max-height: 10000000px;
+    height: 100%;
+}
+
+/*Header*/
+
+header {
+	height: 100px;
+	font-family: 'inter';
+	font-weight: bold;
+	background: NavajoWhite;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+		
+}
+
+a {
+	text-decoration: none;
+	display:block;
+	color: DarkOrange;
+}
+.headerButton {
+	height: 76px;
+	width: auto;
+	margin: 0;
+	padding: 10px;
+	font-size: 46px;
+	font-weight: 500;
+	border: 2px solid DarkOrange;
+	text-align: center;
+	line-height: 76px;
+	text-shadow: 5px 5px 3px Chocolate;
+	cursor: pointer;
+}
+audio {
+	display: block;
+	margin: 11px auto;
+}
+
+/*Main*/
+
+main {
+	font-family: 'Inter';
+	height: 100%;
+	background: linear-gradient(to bottom, #FFFACD, #F5DEB3);
+	position: relative;
+	
+}
+
+div {
+	font-size: 34px;
+	font-weight: 300;
+}
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(5, 200px);
+	gap: 25px;
+	grid-template-rows: 0px 300px 0px;
+	margin: auto;
+}
+
+.wrapper {
+	height: 300px;
+	width: 820px;
+	margin: auto;
+	display: flex;
+	align-items: center;
+			
+}
+.photo {
+	width: 270px;
+	height: 270px;
+	border: 5px solid #F4A460;
+	border-radius: 0 0 50% 0;
+	border-top-color: transparent;
+	border-left-color: transparent;
+	margin: 15px;
+			
+}
+.right {
+	border-top-color: #F4A460;
+	border-left-color: #F4A460;
+	border-radius: 50% 0 0 0;
+	border-bottom-color: transparent;
+	border-right-color: transparent;
+}
+.cave {
+	height: 125px;
+	width: 125px;
+	position: absolute;
+	bottom: 75px;
+	left: 25px;
+	background: url(../images/darkCave.png) center center no-repeat;
+	background-size: auto 125px;
+	
+}
+.cave > a {
+	height: 125px;
+	width: 125px;
+}
+.main {
+	background: url(../images/main.jpg), url(../images/matrix.jpg);
+	background-position: 0px 0px, 0px 0px;
+	background-repeat: no-repeat; no-repeat;
+	background-size: 270px 270px;
+	transition: all 5s ease-in-out;
+}
+.main:hover {
+	background-position: 0px 275px, 0px 0px;
+}
+.pfr {
+	background: url(../images/pfr3.png) center center no-repeat;
+	background-size: 270px 270px;
+	border-radius: 50%;
+}
+.dc {
+	background: url(../images/dc_logo.png) center center no-repeat;
+	background-size: 270px 270px;
+	border-radius: 50%;
+}
+.liz {
+	background: url(../images/liz.jpg) center center no-repeat;
+	background-size: 270px;
+}
+.bt {
+	background: url(../images/bigTool.png) center center no-repeat;
+	background-size: 270px;
+}
+.alice {
+	background: url(../images/alice.jpg) center center no-repeat;
+	background-size: 270px;
+}
+.wed {
+	background: url(../images/wedding.jpg) center center no-repeat;
+	background-size: 270px;
+}
+.univ {
+	background: url(../images/univer.jpg) center center no-repeat;
+	background-size: auto 270px;
+}
+.mine {
+	border: 5px solid Gainsboro;
+	border-top-color: transparent;
+	border-left-color: transparent;
+	background: url(../images/CSC_0827.jpg) center center no-repeat;
+	background-size: auto 270px;
+}
+.winter {
+	border: 5px solid Gainsboro;
+	border-bottom-color: transparent;
+	border-right-color: transparent;
+	background: url(../images/DSC_0094.jpg) center center no-repeat;
+	background-size: 270px;
+}
+.summer {
+	border: 5px solid Gainsboro;
+	border-top-color: transparent;
+	border-left-color: transparent;
+	background: url(../images/DSC_0441.jpg) center center no-repeat;
+	background-size: auto 270px;
+}
+.despair {
+	border: 5px solid Gainsboro;
+	border-bottom-color: transparent;
+	border-right-color: transparent;
+	background: url(../images/IMG_9110.jpg) center center no-repeat;
+	background-size: auto 270px;
+}
+.shop {
+	border: 5px solid Gainsboro;
+	border-top-color: transparent;
+	border-left-color: transparent;
+	background: url(../images/shop.jpg) center center no-repeat;
+	background-size: auto 270px;
+}
+.sph {
+	border: 5px solid Gainsboro;
+	border-bottom-color: transparent;
+	border-right-color: transparent;
+	background: url(../images/sph.jpg) center center no-repeat;
+	background-size: 270px;
+}
+
+p {
+	width: 510px;
+	color: Chocolate;
+}
+
+
+/*Footer*/
+
+footer {
+	height: 78px;
+	background: #FFDAB9;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-items: center;
+	align-items: center;
+	border-top: 2px solid DarkOrange;
+}
+footer > div {
+	height: 64px;
+	width: 64px;
+	border: none;
+}
+footer > div:nth-of-type(1) {
+	background: url(../images/Telegram_logo.png) 100%;
+}
+footer > div:nth-of-type(2) {
+	width: 86px;
+	background: url(../images/Gmail_Logo.png) 100%;
+}
+footer > div:nth-of-type(3) {
+	background: url(../images/GitHub_logo.png) 100%;
+}
+footer > a {
+	height: 5px;
+}
+footer > div > a {
+	height: 100%;
+	width: 100%;
+}
+footer > p {
+	display: inline-block;
+}
+
+.dark {
+	font-family: 'Rubik';
+	color: white;
+	background: black;
+	border: none;
+	text-shadow: none;
+}
+.wrapper > p {
+	background: transparent;
+}
+.row {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+.forest {
+	background: url(../images/forest.jpg) center center no-repeat;
+	background-size: auto 100%;
+}
